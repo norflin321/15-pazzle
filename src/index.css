@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'Proxima Nova-Semibold';
+  src: url('./font/ProximaNova-Semibold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Proxima Nova-Regular';
+  src: url('./font/ProximaNova-Regular.woff') format('woff');
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #18181b;
+  color: white;
+}
+.grid {
+  display: inline-block;
+  border: 1px solid white;
+  font-family: Proxima Nova-Semibold;
+  font-size: 35px;
+  user-select: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.row {
+  display: flex;
+}
+.cell {
+  display: block;
+  border: 1px solid white;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cell.clean {
+  background-color: transparent;
+}
+p {
+  font-family: Proxima Nova-Regular;
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.rules {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  width: 500px;
+}
+.solved {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  cursor: pointer;
+}
+svg {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  cursor: pointer;
+}
