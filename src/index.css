@@ -17,7 +17,7 @@ body {
   display: inline-block;
   border: 1px solid white;
   font-family: Proxima Nova-Semibold;
-  font-size: 35px;
+  font-size: 45px;
   user-select: none;
   position: absolute;
   top: 50%;
@@ -30,8 +30,8 @@ body {
 .cell {
   display: block;
   border: 1px solid white;
-  width: 90px;
-  height: 90px;
+  width: 110px;
+  height: 110px;
   display: flex;
   justify-content: center;
   align-items: center;
