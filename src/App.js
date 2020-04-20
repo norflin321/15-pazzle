@@ -80,15 +80,15 @@ const App = () => {
           <div className="row" key={y}>
             {row.map((cell, x) =>
               cell > 0 ? (
-                isClose(state, y, x) ? (
+                isClose(state, y, x) && !solved ? (
                   <div
                     key={x}
-                    className="cell"
+                    className="cell moveable"
                     onClick={e => {
                       setClicks(clicks + 1);
                       dispatch({ y, x });
                     }}
-                    style={{ cursor: 'pointer', backgroundColor: color }}
+                    style={{ backgroundColor: color }}
                   >
                     {cell}
                   </div>

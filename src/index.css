@@ -59,7 +59,6 @@ p {
   top: 90px;
   left: 50%;
   transform: translate(-50%, 0);
-  cursor: pointer;
 }
 svg {
   position: absolute;
@@ -67,4 +66,11 @@ svg {
   left: 50%;
   transform: translate(-50%, 0);
   cursor: pointer;
+}
+.moveable {
+  cursor: pointer;
+  transition: opacity 0.1s ease;
+}
+.moveable:hover {
+  opacity: 0.9;
 }
